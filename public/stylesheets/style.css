@@ -132,3 +132,6 @@ ul.success li{
 	background-color: #d6e9c6;
 	list-style: none;
 }
+.post img{
+	width: 100%;
+}
