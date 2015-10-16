@@ -21,6 +21,13 @@ var app = express();
 //making local variable as moment
 app.locals.moment = require('moment');
 
+app.locals.truncateText = function(text,length){
+
+
+  var  truncate = text.substring(0,length);
+  return  truncate;
+};
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
